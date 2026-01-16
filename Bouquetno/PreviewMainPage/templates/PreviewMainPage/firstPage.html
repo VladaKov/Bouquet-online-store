@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Preview</title>
     <link rel="stylesheet" href="{% static 'PreviewMainPage/css/firstPageCss.css' %}">
     <script src="{% static 'PreviewMainPage/js/coordinatesOfTheCone.js' %}"></script>
 </head>
@@ -18,7 +18,7 @@
                 <div class="hero-content">
                     <h1>Bouquetno</h1>
                     <p>Букеты из цветов в интернет-магазине цветов</p>
-                    <button class="button-start">
+                    <button class="button-start" onclick="window.location.href='{% url 'main:start_home' %}'">
                         Начать покупку
                     </button>
                 </div>
