@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'PreviewMainPage/css/firstPageCss.css' %}">
+    <script src="{% static 'PreviewMainPage/js/coordinatesOfTheCone.js' %}"></script>
+</head>
+<body>
+    <section class="layers">
+        <div class="layers__container">
+            <div class="layers_item layer-1" style="background-image: url('{% static 'PreviewMainPage/image/layer-1.jpg' %}');"></div>
+            <div class="layers_item layer-2" style="background-image: url('{% static 'PreviewMainPage/image/layer-2.png' %}');"></div>
+            <div class="layers_item layer-3">
+                <div class="hero-content">
+                    <h1>Bouquetno</h1>
+                    <p>Букеты из цветов в интернет-магазине цветов</p>
+                    <button class="button-start">
+                        Начать покупку
+                    </button>
+                </div>
+            </div>
+            <div class="layers_item layer-4">
+                {% comment %}* <canvas class="rain"></canvas> Если понадобится сделать дождь, то uncomment canvas, пишем скрипт на js {% endcomment %}
+            </div>
+            <div class="layers_item layer-5" style="background-image: url('{% static 'PreviewMainPage/image/layer-5.png' %}');"></div>
+            <div class="layers_item layer-6" style="background-image: url('{% static 'PreviewMainPage/image/layer-6.png' %}');"></div>
+        </div>
+    </section>
+</body>
+</html>
